@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="renderer" content="webkit" />
+		<title>page1</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		
+		<div class="page1">
+			
+			<div class="text1">
+				<a href="page2.html">LANDI / HANKUN LI</a>
+			</div>
+			
+			<div class="text2">
+				<p>
+					Not managing to name the specialty of his desire for the loved being , <br />
+					the amorous subject falls back on this rather stupid word: <br /> 
+					<i style="font-size: 1.2em;">adorable!</i>
+				</p>
+			</div>
+			
+			
+			<div class="line"></div>
+			
+			
+		</div>
+		
+		
+		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				
+				// 斜线右上角到左下角循环
+				circle_line();
+				setInterval(circle_line, 3500);
+				function circle_line() {
+					// 第一步移动到中间
+					$('.line').animate({
+						top: '500px'
+					}, 1000, function () {
+						// 第二步等待1500毫秒后移动到左下角外边
+						setTimeout(function(){
+							$('.line').animate({
+								top: '1600px'
+							},1000, function () {
+								// 第三步重置斜线位置到右上角外边
+								$('.line').css('top', -1000);
+							});
+						}, 1500);
+					});
+					
+					
+				}
+				
+				
+				
+			});
+		</script>
+	</body>
+</html>

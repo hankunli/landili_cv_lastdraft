@@ -1,0 +1,216 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Hw5aX8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw5aX8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aX8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw5aX8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w5aX8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aX8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr73w5aX8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC73w5aX8.ttf) format('truetype');
+}
+body {
+  font-family: "Montserrat";
+}
+a {
+  text-decoration: none;
+  color: rgb(233, 233, 233);
+}
+li {
+  list-style: none;
+}
+input,
+button,
+textarea {
+  border: 0;
+  outline: none;
+}
+img {
+  width: 100%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 1200px;
+  margin: 0 auto;
+}
+.page1 {
+  position: relative;
+  min-height: 100vh;
+  background-color: #CAE1FF;
+  overflow: hidden;
+}
+.page1 .text1 {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  font-size: 64px;
+}
+.page1 .text1 a {
+  color: #fff;
+}
+.page1 .text2 {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  width: 920px;
+}
+.page1 .text2 p {
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.page1 .line {
+  position: absolute;
+  left: -2000px;
+  top: -800px;
+  width: 6000px;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(30deg);
+}
+.page2 {
+  background-color: #cae1ff5a;
+  padding: 10px;
+  overflow: hidden;
+}
+.page2 .line1 {
+  border-top: 5px solid #000;
+  display: flex;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  padding: 20px 0;
+}
+.page2 .line1 .left {
+  width: 50%;
+}
+.page2 .line1 .right a {
+  color: #333;
+  width: 50%;
+}
+.page2 .line2 {
+  border-top: 5px solid #000;
+  position: relative;
+  height: 120px;
+  overflow: hidden;
+}
+.page2 .line2 .box {
+  display: flex;
+}
+.page2 .line2 .box .p1 {
+  font-size: 84px;
+  white-space: nowrap;
+}
+.page3 {
+  padding: 0 50px;
+  padding-top: 50px;
+  padding-bottom: 400px;
+  background-color: #f8f8ff50;	
+}
+.page3 .bigbox {
+  background-color: #f5f5f5;
+  padding: 30px;
+}
+.page3 .bigbox .header {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color:#F5F5F5;
+  display: flex;
+  align-items: center;
+  color: #333;
+  height: 200px;
+}
+.page3 .bigbox .header .left {
+  width: 50%;
+  font-size: 50px;
+}
+.page3 .bigbox .header .right {
+  width: 50%;
+  text-align: right;
+  font-size: 50px;
+}
+.page3 .bigbox .list1 .border-top {
+  border-top: 1px solid #bbb;
+}
+.page3 .bigbox .list1 li {
+  display: flex;
+  padding: 20px 0;
+}
+.page3 .bigbox .list1 li .col1 {
+  width: 25%;
+  color: #999;
+}
+.page3 .bigbox .list1 li .col2 {
+  width: 25%;
+  color: #999;
+}
+.page3 .bigbox .list1 li .col2 .flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.page3 .bigbox .list1 li .col3 {
+  width: 50%;
+}
+.page3 .bigbox .list1 li .col3 .desc1 {
+  color: #666;
+  line-height: 2;
+}
+.page3 .bigbox .list1 li .col3 .flexbox {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.page3 .bigbox .list1 li .col3 .flexbox .pic img {
+  width: auto;
+  max-height: 220px;
+}
+.page3 .bigbox .list1 li .col3 .flexbox .pic p {
+  font-weight: lighter;
+  font-style: italic;
+  text-align: center;
+}

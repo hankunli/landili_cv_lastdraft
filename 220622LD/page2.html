@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="renderer" content="webkit" />
+		<title>page2</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+
+		<div class="page2">
+
+			<div class="line1">
+				<div class="left">
+					LANDI / HANKUN LI <br />
+					XIAMEN | NEW TAIPEI <br />
+					leehankoong@gmail.com
+				</div>
+				<div class="right">
+					<a href="page3.html?target=EDUCATION">EDUCATION</a> <br />
+					<a href="page3.html?target=EXPERIENCE">EXPERIENCE</a> <br />
+					<a href="page3.html?target=PROJECTS">PROJECTS</a> <br />
+					<a href="page3.html?target=AWARDS">AWARDS</a> <br />
+					<a href="page3.html?target=SKILLS">SKILLS</a>
+				</div>
+			</div>
+
+			<div class="line2 speed1">
+				
+				<div class="box">
+					<p class="p1">WELCOME TO MY AMPHITHEATRE ←&nbsp;</p>
+					<p class="p1">WELCOME TO MY AMPHITHEATRE ←&nbsp;</p>
+				</div>
+				
+			</div>
+			
+			<div class="line2 speed2">
+				
+				<div class="box">
+					<p class="p1">WELCOME TO MY AMPHITHEATRE ✰&nbsp;</p>
+					<p class="p1">WELCOME TO MY AMPHITHEATRE ✰&nbsp;</p>
+				</div>
+				
+			</div>
+			<div class="line2 speed3">
+				
+				<div class="box">
+					<p class="p1">WELCOME TO MY AMPHITHEATRE !!!&nbsp;</p>
+					<p class="p1">WELCOME TO MY AMPHITHEATRE !!!&nbsp;</p>
+				</div>
+				
+			</div>
+			<div class="line2 speed4">
+				
+				<div class="box">
+					<p class="p1">WELCOME TO MY AMPHITHEATRE ◇&nbsp; </p>
+					<p class="p1">WELCOME TO MY AMPHITHEATRE ◇&nbsp;</p>
+				</div>
+				
+			</div>
+			<div class="line2 speed5">
+				
+				<div class="box">
+					<p class="p1">WELCOME TO MY AMPHITHEATRE →&nbsp;</p>
+					<p class="p1">WELCOME TO MY AMPHITHEATRE →&nbsp;</p>
+				</div>
+				
+			</div>
+			
+			
+		</div>
+
+		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			
+			$(function() {
+				
+				// 滚动的元素，滚动速度
+				function scroll(element, speed) {
+					var leftOffset = 0;
+					setInterval(function() {
+						leftOffset++;
+						element.css('transform', 'translateX(-'+ leftOffset +'px)')
+						if(Math.abs(element.find('.p1').offset().left) > element.find('.p1').width()) {
+							leftOffset = 0;
+						}
+						console.log(Math.abs(element.find('.p1').offset().left),element.find('.p1').width());				
+					}, speed);
+				}
+				
+				scroll($('.speed1 .box'), 10);
+				scroll($('.speed2 .box'), 8);
+				scroll($('.speed3 .box'), 6);
+				scroll($('.speed4 .box'), 12);
+				scroll($('.speed5 .box'), 15);
+				
+//				
+//				setInterval(function() {
+//					leftOffset--;
+//					console.log(leftOffset);
+//					
+//					$(".line2 p").css('left', leftOffset);
+//					
+//				}, 10);
+
+//				setInterval(function(){
+////					var current_left1 = $('.row1').offset().left;
+////					$('.row1').css('transform', 'translateX(' + (current_left1 -1) + 'px)')
+//					
+//					var current_left2 = $('.row2').offset().left;
+//					$('.row2').css('transform', 'translateX(' + (current_left2 -1) + 'px)')
+//				},20);
+
+			});
+		</script>
+	</body>
+
+</html>
